@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery: Basic Functions</title>
+		<meta name="description" content="Basic JQuery Functions"/>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="side-bar">
+				<ul>
+					<li><a href="#1">.addClass</a></li>
+					<li><a href="#2">.after</a></li>
+					<li><a href="#3">.append</a></li>
+					<li><a href="#4">.attr</a></li>
+					<li><a href="#5">.before</a></li>
+					<li><a href="#6">.html</a></li>
+					<li><a href="#7">.text</a></li>
+					<li><a href="#8">.val</a></li>
+					<li><a href="#9">.toggle</a></li>
+					<li><a href="#10">.hide</a></li>
+					<li><a href="#10">.show</a></li>
+					<li><a href="#12">.slideToggle</a></li>
+					<li><a href="#13">.slideUp</a></li>
+					<li><a href="#13">.slideDown</a></li>
+					<li><a href="#15">.fadeOut</a></li>
+					<li><a href="#15">.fadeIn</a></li>
+					<li><a href="#17">.focus</a></li>
+					<li><a href="#18">.click</a></li>
+				</ul>
+			</div> <!-- end of side bar -->
+			<div id="content">
+				<h1 id="top">Basic JQuery Functions</h1>
+				<hr>
+				<h2 id="1">Using .addClass with a Class Name</h2>
+					<p>The paragraph below currently has no class.</p>
+					<input class="addClass" type="submit" value="Add redJustified Class"/>
+					<input class="removeClass" type="submit" value="Reset"/>
+					<p id="unjustifiedDefault"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				<h2>Using .addClass with a Function</h2>
+					<p>This list doesn't have any classes added yet.</p>
+					<input id="addClasswFunction" type="submit" value="Add Class via Index Function"/>
+					<input class="removeClasswFunction" type="submit" value="Reset"/>
+					<ol id="classwFunction">
+						<li>This is the first index list item. It will be smaller.</li>
+						<li>This is the second. It will be a bit bigger.</li>
+						<li>This is the third. And it will be even bigger.</li>
+					</ol>
+				<hr>
+				<h2 id="2">Using .after by Adding Content</h2>
+					<input class="afterBox" type="submit" value="Add Another Box"/>
+					<input class="removeBox" type="submit" value="Remove Added Box"/>
+					<div id="boxes">
+						<div id="afterBox"></div>
+					</div>
+				<hr>
+				<h2 id="3">Using .append</h2>
+					<input class="appendP" type="submit" value="Append Inside Paragraph"/>
+					<input class="removeAppend" type="submit" value="Remove Append(s)"/>
+					<div id="append">
+						<p>Here is an appended message inside a paragraph: </p>
+					</div>
+				<hr>
+				<h2 id="4">Using .attr</h2>
+					<p>Set the width attribute for this image:</p>
+					<input class="biggerAttr" type="submit" value="Double Size"/>
+					<input class="smallerAttr" type="submit" value="Resize"/>
+					<img src="http://www.scifun.ed.ac.uk/pages/about_us/shows/images/Space-warper-small.gif" alt="No Photo" width="100"/>
+				<hr>
+				<h2 id ="5">Using .before</h2>
+					<input id="before" type="submit" value="Add Before Paragraph"/>
+					<input id="removeParagraph" type="submit" value="Remove Before Paragraph(s)"/>
+					<p class="beforeExample">Add a paragraph before this paragraph</p>
+				<hr>
+				<h2 id ="6">Using .html</h2>
+					<input id="changeToImg" type="submit" value="Change to Image"/>
+					<input id="changeToText" type="submit" value="Back to Text"/>
+					<div class="secretAnimal">
+						<h4>Peek Inside Me!</h4>
+					</div>
+				<hr>
+				<h2 id="7">Using .text</h2>
+					<input id="changeTextFrench" type="submit" value="Translate to French"/>
+					<input id="changeTextEnglish" type="submit" value="Back to English"/>
+					<div id="textChange">
+						<h4>Hello World!</h4>
+					</div>
+				<hr>
+				<h2 id="8">Using .val</h2>
+					<input id="changeToTurtle" type="submit" value="Change Value to 'Turtle'"/>
+					<input id="changeToSkunk" type="submit" value="Change Value to Skunk"/>
+					<input id="sampleValueChange" type="submit" value="Change Me!">
+				<hr>
+				<h2 id="9">Using .toggle</h2>
+					<input id="toggleP" type="submit" value="Toggle Paragraph Between Hide and Show"/>
+					<p class="toggleP">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				<hr>
+				<h2 id="10">Using .hide & .show</h2>
+					<input id="hideP" type="submit" value="Hide"/>
+					<input id="showP" type="submit" value="Show"/>
+					<p class="hideShow">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				<hr>
+				<h2 id="12">Using .slideToggle</h2>
+					<p class="slideToggleP">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<input id="slideToggleP" type="submit" value="Slide Toggle Paragraph"/>
+				<hr>
+				<h2 id="13">Using .slideUp & .slideDown</h2>
+					<p class="slideUpDown">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<input id="slideUpP" type="submit" value="Slide Up"/>
+					<input id="slideDownP" type="submit" value="Slide Down"/>
+				<hr>
+				<h2 id="15">Using .fadeOut & .fadeIn</h2>
+					<input id="fadeOutP" type="submit" value="Fade Out"/>
+					<input id="fadeInP" type="submit" value="Fade In"/>
+					<p class="fadeOutIn">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				<hr>
+				<h2 id="17">Using .focus</h2>
+					<p>Click the Input Box Below:</p>
+					<p class="focus"><input type="password"> <span>At Least 8 characters!</span></p>
+				<hr>
+				<h2 id="18">Using .click</h2>
+					<input id="clickDemo" type="submit" value="Click Me!"/>
+				<hr>
+			</div> <!-- End of content -->
+			<div class="clear"></div>
+			<div id="footer">
+				<a href="#top"><h4>Back to Top</h4></a>
+			</div> <!-- End of footer -->
+		</div> <!--end of wrapper -->
+	</body>
+</html>
