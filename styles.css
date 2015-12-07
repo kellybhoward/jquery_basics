@@ -147,3 +147,12 @@ input[type="submit"]:focus{
 .focus span{
 	display: none;
 }
+a{
+	color: #c7b7c7
+}
+a:hover{
+	color: #e3d1e3
+}
+a:visited{
+	color: #c7b7c7
+}
