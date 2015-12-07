@@ -156,3 +156,8 @@ a:hover{
 a:visited{
 	color: #c7b7c7
 }
+.git_logo{
+	width: 20px;
+	height: 20px;
+	display: inline;
+}
