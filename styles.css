@@ -1,0 +1,149 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+body{
+	background-color: #696969;
+	margin: 0 0 50px;
+}
+#wrapper{
+	margin: 0px auto;
+	width: 1000px;
+	overflow: hidden;
+	font-family: "Arial", sans-serif;
+	background-color: #444444;
+	color: #ffffff;
+}
+#side-bar{
+	width: 150px;
+	background-color: #222222;
+	position: fixed;
+	height: 100%;
+}
+#side-bar ul{
+	margin-top: 100px;
+}
+#side-bar ul li{
+	list-style: none;
+	margin: 15px 0px 10px 30px;
+}
+
+#side-bar a{
+	text-decoration: none;
+	color: #eeeeee;
+	display: block;
+}
+#content{
+	width: 700px;
+	text-align: center;
+	padding: 40px 20px 20px 100px;
+	margin: 0px auto;
+}
+#content h2{
+	padding: 20px 0px;
+	color: #ad91b4;
+}
+#content hr{
+	margin: 10px 0px;
+}
+#content p{
+	padding: 10px;
+}
+#content .redJustified {
+	color: red;
+	text-align: justify;
+}
+#content ol{
+	margin: 10px 50px;
+	text-align: left;
+}
+#content ol li{
+	padding: 5px 0px;
+}
+.item-0{
+	font-size: .5em;
+}
+.item-1{
+	font-size: .7em;
+}
+.item-2{
+	font-size: .9em;
+}
+.newBox, #afterBox{
+	width: 100px;
+	height: 90px;
+	margin: 0px 10px 10px 0px;
+	background-color: #8d0210;
+	display: inline-block;
+}
+.newBox{
+	background-color: #a54300;
+}
+#afterBox{
+	background-color: #f69e17;
+}
+#content img{
+	display: block;
+	margin: 20px auto;
+}
+#htmlChange h4, #textChange h5{
+	margin: 10px 0px;
+	font-weight: lighter;
+}
+#htmlChange p span{
+	font-weight: 1000;
+	color: #f68d36;
+	font-size: 1.3em;
+}
+
+#footer {
+	margin: 0px auto;
+	background-color: #333333;
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 1000px;
+}
+#footer h4{
+	margin: 15px 20px 0px 850px;
+	padding: 5px;
+	text-align: right;
+	display: inline-block;
+}
+input[type="submit"]{
+	color: white;
+	display: inline-block;
+	text-align: center;
+	font-size: .8em;
+	margin: 5px auto;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(#dfa270, #71528b);
+	background: -o-linear-gradient(#ae85d0, #71528b);
+	background: -moz-linear-gradient(#ae85d0, #71528b);
+	background: linear-gradient(#ae85d0, #71528b);
+}
+#sampleValueChange{
+	background: -webkit-linear-gradient(#ae85d0, #cc7731);
+	background: -o-linear-gradient(#ae85d0, #cc7731);
+	background: -moz-linear-gradient(#ae85d0, #cc7731);
+	background: linear-gradient(#ae85d0, #cc7731);
+}
+input[type="submit"]:hover{
+	cursor: pointer;
+	background: -webkit-linear-gradient(#ae85d0, #513965);
+	background: -o-linear-gradient(#ae85d0, #513965);
+	background: -moz-linear-gradient(#ae85d0, #513965);
+	background: linear-gradient(#ae85d0, #513965);
+}
+input[type="submit"]:focus{
+	outline: none;
+}
+.focus span{
+	display: none;
+}
